@@ -1,0 +1,10 @@
+pandas
+requests
+bs4 
+psycopg2
+openpyxl
+lxml
+numpy
+
+#Atentar-se sempre a ativação do ambiente virtual antes de instalar as dependências" 
+#mesmo que tudo esteja feito da maneira correta sempre abra o terminal e digite .venv\Scripts\activate" 
