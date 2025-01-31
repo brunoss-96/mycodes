@@ -22,7 +22,7 @@ def transform_dadosbitcoin(dados):
     }
     return dados_transformados
 
-def salvar_dados_tinydb(dados, pasta_base='ETLProjectAPIExtract', db_name='dadosbitcoin_{}.json'):
+def salvar_dados_tinydb(dados, pasta_base='data_00', db_name='dadosbitcoin_{}.json'):
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')  #essas duas linhas são para criar um nome único para o arquivo com data e hora de cada cotacao
     db_name = db_name.format(timestamp)    
     os.makedirs(pasta_base, exist_ok=True)
