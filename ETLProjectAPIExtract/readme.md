@@ -1,19 +1,26 @@
-Projeto ETL com Python
-Descrição
-Este projeto implementa um pipeline ETL (Extract, Transform, Load) utilizando Python. O sistema realiza a extração de dados via API REST, faz transformações necessárias e carrega os dados em um banco de dados destino.
+# Dashboard de Preços do Bitcoin 🪙
 
-Funcionalidades
-Extração de dados via API utilizando a biblioteca requests
+Este projeto implementa um pipeline ETL que coleta dados de preços do Bitcoin da API da Coinbase, armazena esses dados em um banco de dados PostgreSQL e exibe esses dados em um dashboard interativo criado com Streamlit.
 
-Transformação e limpeza dos dados
+## 📋 Resumo das Funcionalidades
 
-Carregamento em banco de dados
+- **Pipeline**: Extrai dados de preços do Bitcoin da API da Coinbase, transforma os dados e os armazena em um banco de dados PostgreSQL.
+- **Monitoramento de Performance**: Utiliza Logfire para monitorar a performance do pipeline, incluindo spans para as etapas de extração, transformação e carregamento.
+- **Dashboard Interativo**: Exibe os dados dos preços do Bitcoin, mostrando as tendências ao longo do tempo e fornecendo métricas importantes, como preço atual, máximo e mínimo.
 
-Logs de execução
+## 🛠️ Principais Bibliotecas Utilizadas
 
-Tratamento de erros
+- **Streamlit**: Usada para criar o dashboard interativo
+- **Pandas**: Para manipulação e análise de dados
+- **SQLAlchemy**: Usada para ORM (Mapeamento Objeto-Relacional) com o banco de dados PostgreSQL
+- **psycopg2**: Driver para se conectar ao banco de dados PostgreSQL
+- **Requests**: Para fazer requisições HTTP à API da Coinbase e obter os dados de preços do Bitcoin
+- **Logfire**: Para monitoramento de performance e logging
+- **Altair**: Para criação de gráficos interativos
+- **dotenv**: Para carregar variáveis de ambiente a partir de um arquivo .env
 
-Pré-requisitos
-Python 3.8+
-pip (gerenciador de pacotes Python)
-Tinydb
+## 📦 Estrutura de Pastas
+
+- `app/`: Contém o código do dashboard interativo
+- `src/`: Contém o código do pipeline ETL
+- `requirements.txt`: Lista de bibliotecas necessárias
