@@ -37,4 +37,4 @@ console.log(pen);
 // arrays
 let colors = ["red", "blue", "green"];
 colors[2] = "magenta"; // exemplo de como alterar um valor de um array
-console.log(colors);
+console.log(colors[0]);
